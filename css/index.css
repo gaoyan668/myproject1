@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 640px;
+    height: 960px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -320px;
+    /*按照顶部去缩放默认是中心*/
+    transform-origin: top;
+    -webkit-transform-origin:top;
+}
+#list{
+   width: 100%;
+}
+#list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#list li.zIndex{
+    z-index: 5;
+}
+#list li:nth-child(1){
+    background-image: url("../img/bj1.jpg");
+}
+#list li:nth-child(2){
+    background-image: url("../img/bj2.png");
+
+}
+#list li:nth-child(3){
+    background-image: url("../img/bj2.jpg");
+
+}
+#list li:nth-child(4){
+    background-image: url("../img/0.png");
+}
+#list li:nth-child(5){
+    background-image: url("../img/bj4.gif");
+}
+
+.a1{
+   position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.a1 .aa1{
+    margin-top: 50px;
+
+}
+.a1 .aa1 img{
+
+    width: 250px;
+    height: 350px;
+}
+.a1 .aa2{
+    width:100%;
+    height: 200px;
+    position: absolute;
+    top: 650px;
+
+}
+.a1 .aa2 img{
+    height: 160px ;
+    line-height: 160px;
+    text-align: center;
+
+}
+
+.a2{
+    position: absolute;
+    top:30%;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #000;
+    height: 76px;
+    line-height: 76px;
+    font-weight: bold;
+}
+.a2 div:nth-child(1){
+    height: 150px;
+    margin-bottom: 30px;
+    background: url("../img/头像.png")no-repeat center;
+}
+.a2 div:nth-child(odd){
+    -webkit-transform: translate(600px,0);
+    transform:translate(600px,0);
+}
+.a2 div:nth-child(even){
+    -webkit-transform: translate(-600px,0);
+    transform:translate(-600px,0);
+}
+#a2 div{
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition:0.5s ease-out;
+    transition:0.5s ease-out;
+}
+.a3{
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    width: 205px;
+    height: 80px;
+
+}
+.a3 img{
+    width: 100%;
+    height: 80px;
+}
+.a4{
+    position: absolute;
+    width: ;
+}
