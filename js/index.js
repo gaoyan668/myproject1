@@ -3,7 +3,7 @@ var oLis = document.querySelectorAll("#list>li");
 var winW = document.documentElement.clientWidth;
 var winH = document.documentElement.clientHeight;
 var desW = 640;
-var desH = 960;
+var desH = 1008;
 if (winW / winH < desW / desH) {//按照高度比例去缩放
     main.style.webkitTransform = "scale(" + winH / desH + ")";
 } else {//按照宽度比例去缩放
@@ -58,8 +58,14 @@ function end(e){
 
                 this.style.webkitTransition = "";
             }
-            //this.firstElementChild.id = "a" + (this.index + 1);
+            this.firstElementChild.id = "a" + (this.index + 1);
         },false)
     }
 
 }
+
+
+
+
+
+
